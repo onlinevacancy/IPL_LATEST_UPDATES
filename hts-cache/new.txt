@@ -1,0 +1,4 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+15:47:19	4568/4568	---MCZ	200	added ('OK')	text/html	etag:%2211d8-69cbc77c-305bfdd4627c5770;gz%22	https://power-play.online/mahesh.html?utm_medium=paid	power-play.online/maheshad33.html	(from )
+15:47:20	1903/1903	---M-Z	-1	error ('Open%20error%20when%20decompressing%20(can%20not%20create%20temporary%20file%20/tmp0.z)')	text/html	etag:%22119f-68074bd6-88d647a042415298;gz%22	https://power-play.online/robots.txt		(from )
+15:47:21	16952/16952	---M--	200	added ('OK')	image/jpeg	date:Wed,%2001%20Apr%202026%2010:17:21%20GMT	https://power-play.online/img/MAHESH.jpg	power-play.online/img/MAHESH.jpg	(from https://power-play.online/mahesh.html?utm_medium=paid)
