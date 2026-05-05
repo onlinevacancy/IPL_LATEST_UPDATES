@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
@@ -110,7 +109,7 @@ app.get('/admin', (req, res) => {
     res.send(html);
 });
 
-// Verify payment (admin only - no auth for simplicity)
+// Verify payment
 app.post('/api/verify/:orderId', (req, res) => {
     const orderId = req.params.orderId;
     const payment = payments.find(p => p.orderId === orderId);
@@ -124,8 +123,5 @@ app.post('/api/verify/:orderId', (req, res) => {
     }
 });
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-    console.log(`📋 Admin panel: http://localhost:${PORT}/admin`);
-});
+// ✅ IMPORTANT FIX FOR VERCEL - Export the app
+module.exports = app;
